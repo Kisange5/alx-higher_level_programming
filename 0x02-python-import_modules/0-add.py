@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-fromm add_0 import add
+from add_0 import add
 
 if  __name == "__main__":
     a = 1
