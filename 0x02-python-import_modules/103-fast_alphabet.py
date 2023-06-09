@@ -1,5 +1,3 @@
 #!/usr/bin/python3
-a = 98
-"""Simple variable
-"""
-
+import string
+print(string.ascii_uppercase)
