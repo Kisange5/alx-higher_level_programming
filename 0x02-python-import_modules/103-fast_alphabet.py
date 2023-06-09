@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+a = 98
+"""Simple variable
+"""
 
-for c in range(65, 91):
-    print("{:c}".format(c), end='\n')
