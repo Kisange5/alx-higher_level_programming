@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 
-import string
-print(f"{string.ascii_uppercase}")
+for c in range(65, 91):
+    print("{:c}".format(c), end='\n')
