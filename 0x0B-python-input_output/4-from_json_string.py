@@ -1,7 +1,9 @@
 #!/usr/bin/python3
 """module documentation"""
 
+
 import json
+
 
 def from_json_string(my_str):
     """creates an object from str
