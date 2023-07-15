@@ -3,6 +3,7 @@
 
 import json
 
+
 def save_to_json_file(my_obj, filename):
     """Creates a JSON rep of an obj
     Args:
@@ -11,5 +12,5 @@ def save_to_json_file(my_obj, filename):
     Return:
           created item
     """
-    with open(filename,mode='w', encoding='utf-8') as fd:
+    with open(filename, mode='w', encoding='utf-8') as fd:
         json.dump(my_obj, fd)
