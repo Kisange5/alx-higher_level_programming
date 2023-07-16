@@ -3,7 +3,6 @@
 
 
 class Student:
-    """A class that defines a student"""
     def __init__(self, first_name, last_name, age):
         """class initializer"""
         self.first_name = first_name
@@ -11,7 +10,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """retrievs dict rep of the class"""
+        """retrieves dict rep of the class"""
         rep = self.__dict__.copy()
         if type(attrs) is list:
             n_rep = {}
@@ -22,3 +21,11 @@ class Student:
                     n_rep[i] = rep[i]
             return n_rep
         return rep
+
+    def reload_from_json(self, json):
+        """Replaces all attributes of the student class"""
+        rep = self.__dict__
+        for i in rep:
+            for j in json:
+                if i == j:
+                    rep[i] = json[j]
